@@ -29,33 +29,53 @@
                         <tr class="table-primary">
                             <td>1</td>
                             <td>T-Shirt</td>
-                            <td id="price"></td>
-                            <td id="disc"></td>
-                            <td id="apd"></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Pant</td>
                             <td id="price1"></td>
                             <td id="disc1"></td>
                             <td id="apd1"></td>
                         </tr>
-                        <tr class="table-primary">
-                            <td>3</td>
-                            <td>cap</td>
+                        <tr>
+                            <td>2</td>
+                            <td>Pant</td>
                             <td id="price2"></td>
                             <td id="disc2"></td>
                             <td id="apd2"></td>
                         </tr>
+                        <tr class="table-primary">
+                            <td>3</td>
+                            <td>cap</td>
+                            <td id="price3"></td>
+                            <td id="disc3"></td>
+                            <td id="apd3"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>choclets</td>
+                            <td id="price4"></td>
+                            <td id="disc4"></td>
+                            <td id="apd4"></td>
+                        </tr>
+                        <tr class="table-primary">
+                            <td>5</td>
+                            <td>Pant xxl</td>
+                            <td id="price5"></td>
+                            <td id="disc5"></td>
+                            <td id="apd5"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>sugare</td>
+                            <td id="price6"></td>
+                            <td id="disc6"></td>
+                            <td id="apd6"></td>
+                        </tr>
                     </tbody>
-                    <tfoot>
+                    <tfoot class="table-primary">
                         <td>Total</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td id="total"></td>
                     </tfoot>
-
                 </table>
             </div>
         </div>
@@ -66,30 +86,45 @@
         crossorigin="anonymous"></script>
 
     <script>
-        let pri = 400, pri1 = 900, pri2 = 150;
-        let dis = 10, dis1 = 12, dis2 = 8;
+        let pri1 = 400, pri2 = 900, pri3 = 150, pri4 = 100, pri5 = 600, pri6 = 200;
+        let dis1 = 10, dis2 = 12, dis3 = 8, dis4 = 10, dis5 = 12, dis6 = 8;
 
-        let disAmount = pri / dis;
         let disAmount1 = pri1 / dis1;
         let disAmount2 = pri2 / dis2;
+        let disAmount3 = pri3 / dis3;
+        let disAmount4 = pri4 / dis4;
+        let disAmount5 = pri5 / dis5;
+        let disAmount6 = pri6 / dis6;
 
-        let adp = pri - disAmount;
         let adp1 = pri1 - disAmount1;
         let adp2 = pri2 - disAmount2;
+        let adp3 = pri3 - disAmount3;
+        let adp4 = pri4 - disAmount4;
+        let adp5 = pri5 - disAmount5;
+        let adp6 = pri6 - disAmount6;
 
-        let total = adp + adp1 + adp2;
+        let total = adp1 + adp2 + adp3 + adp4 + adp5 + adp6;
 
-        document.getElementById("price").innerHTML = pri;
         document.getElementById("price1").innerHTML = pri1;
         document.getElementById("price2").innerHTML = pri2;
+        document.getElementById("price3").innerHTML = pri3;
+        document.getElementById("price4").innerHTML = pri4;
+        document.getElementById("price5").innerHTML = pri5;
+        document.getElementById("price6").innerHTML = pri6;
 
-        document.getElementById("disc").innerHTML = dis;
         document.getElementById("disc1").innerHTML = dis1;
         document.getElementById("disc2").innerHTML = dis2;
+        document.getElementById("disc3").innerHTML = dis3;
+        document.getElementById("disc4").innerHTML = dis4;
+        document.getElementById("disc5").innerHTML = dis5;
+        document.getElementById("disc6").innerHTML = dis6;
 
-        document.getElementById("apd").innerHTML = adp;
         document.getElementById("apd1").innerHTML = adp1;
         document.getElementById("apd2").innerHTML = adp2;
+        document.getElementById("apd3").innerHTML = adp3;
+        document.getElementById("apd4").innerHTML = adp4;
+        document.getElementById("apd5").innerHTML = adp5;
+        document.getElementById("apd6").innerHTML = adp6;
 
         document.getElementById("total").innerHTML = total;
     </script>
